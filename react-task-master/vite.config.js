@@ -8,7 +8,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
  
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/react-js-jsx-and-css-mastering-front-end-development-Princessglory/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
