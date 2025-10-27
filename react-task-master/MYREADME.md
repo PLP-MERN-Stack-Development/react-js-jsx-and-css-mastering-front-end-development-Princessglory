@@ -1,6 +1,10 @@
 # Task Manager (React + Vite + Tailwind + React Router)
 
-## �️ Screenshot
+## 🔗 Live Demo
+
+**Deployed URL:** _Add your Netlify URL here after deployment_
+
+## 🖼️ Screenshot
 
 Below is a screenshot of the Task Master app front page:
 
@@ -154,7 +158,75 @@ npm run preview
 ```
 Vite will serve the production build locally for verification.
 
-## �📋 Notes
+## 🚀 Deploy to Netlify
+
+### Method 1: Netlify CLI (Recommended)
+
+1. **Install Netlify CLI globally** (one-time):
+```powershell
+npm install -g netlify-cli
+```
+
+2. **Login to Netlify**:
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory\react-task-master"
+netlify login
+```
+This opens your browser to authenticate.
+
+3. **Deploy**:
+```powershell
+# Build the app
+npm run build
+
+# Deploy to Netlify (first time)
+netlify deploy
+
+# Follow the prompts:
+# - Create & configure a new site? Yes
+# - Team: Select your team
+# - Site name: Choose a unique name (or leave blank for random)
+# - Publish directory: dist
+
+# After reviewing the draft, deploy to production:
+netlify deploy --prod
+```
+
+4. **Get your URL**: Netlify will provide a URL like `https://your-site-name.netlify.app`
+
+### Method 2: GitHub Integration (Easier)
+
+1. **Push your code to GitHub** (already done):
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory"
+git add .
+git commit -m "Add Netlify configuration"
+git push origin main
+```
+
+2. **Go to Netlify**:
+   - Visit https://app.netlify.com
+   - Sign in with GitHub
+   - Click "Add new site" → "Import an existing project"
+   - Choose "GitHub" and authorize Netlify
+   - Select your repository: `react-js-jsx-and-css-mastering-front-end-development-Princessglory`
+   - Configure build settings:
+     - **Base directory:** `react-task-master`
+     - **Build command:** `npm run build`
+     - **Publish directory:** `react-task-master/dist`
+   - Click "Deploy site"
+
+3. **Wait 1-2 minutes** for deployment to complete, then copy your Netlify URL and add it to the top of this README!
+
+### Update Deployment:
+Just push to GitHub, and Netlify automatically rebuilds and deploys:
+```powershell
+git add .
+git commit -m "Update app"
+git push origin main
+```
+
+## 📋 Notes
 - Node.js 18+ recommended.
 - When ports are busy, Vite automatically tries the next port.
 - After changing Tailwind config, always restart the dev server.
