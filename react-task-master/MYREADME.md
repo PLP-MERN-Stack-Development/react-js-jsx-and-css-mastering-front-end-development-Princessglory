@@ -1,6 +1,10 @@
 # Task Manager (React + Vite + Tailwind + React Router)
 
-## 🖼️ Screenshot
+## � Live Demo
+
+**Deployed URL:** [https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Princessglory/](https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Princessglory/)
+
+## �🖼️ Screenshot
 
 Below is a screenshot of the Task Master app front page:
 
@@ -154,7 +158,41 @@ npm run preview
 ```
 Vite will serve the production build locally for verification.
 
-## 📋 Notes
+## � Deploy to GitHub Pages
+
+### First-Time Setup:
+1. **Push your code to GitHub** (if not already done):
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory"
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+```
+
+2. **Deploy to GitHub Pages**:
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory\react-task-master"
+npm run deploy
+```
+
+3. **Enable GitHub Pages** (one-time setup):
+   - Go to your GitHub repository
+   - Click **Settings** → **Pages**
+   - Under "Source", select **gh-pages** branch
+   - Click **Save**
+
+4. **Wait 1-2 minutes** for deployment to complete, then visit:
+   - `https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Princessglory/`
+
+### Update Deployment (after making changes):
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory\react-task-master"
+npm run deploy
+```
+
+This automatically builds and pushes to the `gh-pages` branch.
+
+## �📋 Notes
 - Node.js 18+ recommended.
 - When ports are busy, Vite automatically tries the next port.
 - After changing Tailwind config, always restart the dev server.
