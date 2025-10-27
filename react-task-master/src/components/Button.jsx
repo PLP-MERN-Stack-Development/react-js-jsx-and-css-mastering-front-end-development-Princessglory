@@ -7,7 +7,7 @@ const Button = ({
   className = '',
   disabled = false 
 }) => {
-  const baseStyles = 'px-4 py-2 rounded transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95';
   
   const variants = {
     primary: 'bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500',

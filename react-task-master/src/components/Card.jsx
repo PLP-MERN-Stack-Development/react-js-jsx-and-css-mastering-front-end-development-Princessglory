@@ -8,7 +8,7 @@ const Card = ({
   bodyClassName = '' 
 }) => {
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden ${className}`}>
+    <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 ${className}`}>
       {title && (
         <div className={`px-6 py-4 border-b border-gray-200 dark:border-gray-700 ${headerClassName}`}>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
