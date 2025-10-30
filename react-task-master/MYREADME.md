@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 
-**Deployed URL:** _Add your Vercel URL here after deployment_
+**Deployed URL:** [https://react-js-jsx-and-css-mastering-front-end-development-ksulbh7l6.vercel.app/](https://react-js-jsx-and-css-mastering-front-end-development-ksulbh7l6.vercel.app/)
 
 ## 🖼️ Screenshot
 
