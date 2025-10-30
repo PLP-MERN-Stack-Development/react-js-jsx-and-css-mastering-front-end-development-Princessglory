@@ -9,6 +9,7 @@
 Below is a screenshot of the Task Master app front page:
 
 ![Front Page](public/images/frontpage.png)
+![darkmode](public/images/darkmode.png)
 
 A learning project that implements a task manager with reusable components, routing, theme switching (light/dark), state management with hooks, and API integration (JSONPlaceholder) including search, loading/error states, and infinite scrolling.
 
