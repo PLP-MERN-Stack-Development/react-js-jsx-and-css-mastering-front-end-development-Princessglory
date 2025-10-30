@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd react-task-master && npm install && npm run build",
+  "outputDirectory": "react-task-master/dist",
+  "devCommand": "cd react-task-master && npm run dev",
+  "installCommand": "cd react-task-master && npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

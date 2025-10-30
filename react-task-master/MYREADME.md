@@ -1,6 +1,10 @@
 # Task Manager (React + Vite + Tailwind + React Router)
 
-## �️ Screenshot
+## 🔗 Live Demo
+
+**Deployed URL:** _Add your Vercel URL here after deployment_
+
+## 🖼️ Screenshot
 
 Below is a screenshot of the Task Master app front page:
 
@@ -154,7 +158,70 @@ npm run preview
 ```
 Vite will serve the production build locally for verification.
 
-## �📋 Notes
+## 🚀 Deploy to Vercel
+
+### Method 1: Vercel CLI (Quick Deploy)
+
+1. **Install Vercel CLI** (one-time):
+```powershell
+npm install -g vercel
+```
+
+2. **Deploy**:
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory"
+vercel
+```
+
+3. **Follow the prompts**:
+   - Set up and deploy? **Yes**
+   - Which scope? Select your account
+   - Link to existing project? **No**
+   - What's your project's name? (Press Enter to accept default or type a name)
+   - In which directory is your code located? **Press Enter** (current directory)
+   - Want to modify settings? **No**
+
+4. **Deploy to production**:
+```powershell
+vercel --prod
+```
+
+5. **Copy your URL**: Vercel will provide a URL like `https://your-project.vercel.app`
+
+### Method 2: GitHub Integration (Automatic Deployments)
+
+1. **Push your code to GitHub**:
+```powershell
+cd "c:\Users\USER\OneDrive\Desktop\MERN\week-3-React\react-js-jsx-and-css-mastering-front-end-development-Princessglory"
+git add .
+git commit -m "Add Vercel configuration"
+git push origin main
+```
+
+2. **Go to Vercel**:
+   - Visit https://vercel.com
+   - Sign in with GitHub
+   - Click "Add New..." → "Project"
+   - Import your repository: `react-js-jsx-and-css-mastering-front-end-development-Princessglory`
+   - Vercel will auto-detect the settings from `vercel.json`
+   - Click "Deploy"
+
+3. **Automatic updates**: Every time you push to GitHub, Vercel automatically rebuilds and redeploys!
+
+4. **Copy your URL** and add it to the top of this README.
+
+### Update Deployment:
+```powershell
+# Just push to GitHub (if using Method 2)
+git add .
+git commit -m "Update app"
+git push origin main
+
+# Or redeploy with CLI (if using Method 1)
+vercel --prod
+```
+
+## 📋 Notes
 - Node.js 18+ recommended.
 - When ports are busy, Vite automatically tries the next port.
 - After changing Tailwind config, always restart the dev server.
