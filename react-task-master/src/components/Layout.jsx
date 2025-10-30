@@ -1,10 +1,8 @@
 import React from 'react';
-import { useTheme } from '../hooks/useTheme';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
-  const { isDarkMode } = useTheme();
   const navigationLinks = [
     { to: '/', text: 'Home' },
     { to: '/about', text: 'About' },
@@ -18,7 +16,7 @@ const Layout = ({ children }) => {
   ];
 
   return (
-    <div className={`${isDarkMode ? 'dark' : ''} min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 transition-colors duration-300`}>
+    <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
       <Navbar 
         brandName="Task Manager"
         links={navigationLinks}
